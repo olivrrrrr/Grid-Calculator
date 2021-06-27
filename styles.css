@@ -1,0 +1,108 @@
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
+
+* {
+  border-box: box-sizing;
+}
+
+html {
+  background-color: #c2c2d6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Share Tech Mono, sans;
+  font-weight: 100;
+}
+
+#container {
+  max-width: 350px;
+  max-height: 350px;
+  padding: 6px;
+  background-color: black;
+  margin: 100px auto;
+}
+
+.display {
+  display: flex;
+  font-family: "Digital", sans-serif;
+  padding-bottom: 4px;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+
+#keys {
+  display: grid;
+  grid-gap: 1px 1px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(5, 1fr);
+  margin-top: -30px;
+  text-align: center;
+}
+
+#keys button {
+  padding: 15px 10px;
+}
+
+#keys button:hover {
+  outline: 0.05em solid grey;
+  cursor: pointer;
+}
+
+.AC {
+  grid-column: 1/3;
+  background-color: #ac3939;
+}
+
+.equal {
+  grid-column: 4/5;
+  grid-row: 4/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zero {
+  grid-column: 1/3;
+}
+
+.nine,
+.eight,
+.seven,
+.six,
+.five,
+.four,
+.three,
+.two,
+.one,
+.zero,
+.dot {
+  background-color: #4d4d4d;
+}
+
+.divide,
+.multiply,
+.minus,
+.plus {
+  background-color: #686767;
+}
+
+.equal {
+  background-color: #47476b;
+}
