@@ -16,7 +16,7 @@
 }
 
 * {
-  border-box: box-sizing;
+   box-sizing: border-box;
 }
 
 html {
@@ -40,11 +40,16 @@ body {
 }
 
 .display {
-  display: flex;
+  display: flex; 
   font-family: "Digital", sans-serif;
   padding-bottom: 4px;
   justify-content: flex-end;
   font-size: 30px;
+  min-height: 100px 
+}
+
+.display div{
+  margin-top: 29px; 
 }
 
 #keys {
@@ -68,6 +73,7 @@ body {
 .AC {
   grid-column: 1/3;
   background-color: #ac3939;
+  color: #fff;
 }
 
 .equal {
@@ -94,6 +100,7 @@ body {
 .zero,
 .dot {
   background-color: #4d4d4d;
+  color: #fff;
 }
 
 .divide,
@@ -101,8 +108,10 @@ body {
 .minus,
 .plus {
   background-color: #686767;
+  color: #fff;
 }
 
 .equal {
   background-color: #47476b;
+  color: #fff;
 }
